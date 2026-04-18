@@ -1,0 +1,108 @@
+DATA KEYS
+
+
+
+1. Index.html
+
+
+
+home 
+
+company\_information
+
+about\_us
+
+our\_customers
+
+global\_operations
+
+products\_services
+
+news\_updates
+
+contact
+
+
+
+item 1,2,3,4 (WIP)
+
+
+
+search\_placeholder
+
+follow\_us
+
+
+
+
+
+corporate\_solutions (Title)
+
+hero\_text
+
+get\_started
+
+learn\_more
+
+
+
+total\_solution\_title
+
+total\_solution\_subtitle
+
+total\_solution\_text
+
+
+
+feature 1,2,3 (Facts)
+
+
+
+stats\_title
+
+stats\_subtitle
+
+
+
+enterprise\_clients, countries, client retention, global\_support (WIP)
+
+
+
+global\_presence 
+
+global\_text
+
+
+
+\[..] (need fixing)
+
+
+
+footer\_text
+
+quick\_links (WIP)
+
+\-> about\_us\_footer
+
+\-> our\_customers
+
+\-> global\_operations
+
+\-> investor\_relations 
+
+\-> sustainability
+
+
+
+services\_footer (WIP) (fix) 
+
+(...)
+
+
+
+contact\_footer
+
+hours (x2)
+
+
+
