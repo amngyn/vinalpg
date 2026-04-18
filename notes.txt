@@ -1,0 +1,22 @@
+FONT SIZES
+
+Logo: 60px
+Logo-Text: 26px
+Logo-Tagline: 10px
+
+Header: 18px
+Submenu Link: 15px
+Header (Hamburger): 14px
+Arrow: 10px
+Submenu Link (Hamburger): 14px
+Social: 14px
+
+Badge (only for some pages): 14px
+Title (Hero): 90px
+Quote: 20px
+Buttons: 14px
+
+Title (Page): 42px
+Paragraph: 18px
+Button (Standard) 16px
+FAI: 13px
