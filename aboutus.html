@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | VINA LPG CO.,LTD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Images/vinalpglogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="aboutus.css">
+</head>
+<body>
+
+    <!-- HEADER (COPY PASTE UNTIL HERO)-->
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo/vinalpgheader.png" alt="VINA LPG CO.,LTD Logo" class="logo-img">
+            <span class="logo-text">VINA LPG CO.,LTD</span>
+        </div>
+
+        <div class="navbar-right">
+        <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link" data-key="home">HOME</a></li>
+
+        <li><a href="aboutus.html" class="nav-link" data-key="company_information">COMPANY</a></li>
+
+
+        <li class="nav-dropdown">
+            <a href="#" class="nav-link" data-key="products">PRODUCTS</a>
+
+            <ul class="nav-submenu" id="nav-productmenu">
+  
+        <li class="nav-dropdown-2">
+            <a href="#" class="submenu-link" data-key="fillingsys">Filling Systems</a>
+            <ul class="nav-submenu-2">
+                <li class="nav-dropdown-3">  
+                    <a href="#" class="submenu-link-2" data-key="fillingcaro">Filling Carousel</a>
+                    <ul class="nav-submenu-3">
+                        <li><a href="#" class="submenu-link-3">KC</a></li>
+                        <li><a href="#" class="submenu-link-3">SG</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="submenu-link-2" data-key="standalonefm">Standalone FM</a></li>
+            </ul>
+        </li>
+
+            <li class="nav-dropdown-2">
+            <a href="#" class="submenu-link" data-key="compressors">Compressors</a>
+            <ul class="nav-submenu-2">
+                <li class="nav-dropdown-3"><a href="#" class="submenu-link-2">Corken</a></li>
+            </ul>
+            </li>
+
+
+            <li class="nav-dropdown-2">
+            <a href="#" class="submenu-link" data-key="pumps">Pumps</a>
+            <ul class="nav-submenu-2">
+                <li class="nav-dropdown-3"><a href="#" class="submenu-link-2">Corken</a></li>
+            </ul>
+            </li>
+
+
+            <li class="nav-dropdown-2">
+            <a href="#" class="submenu-link" data-key="valves">Valves</a>
+            <ul class="nav-submenu-2">
+                <li class="nav-dropdown-3"><a href="#" class="submenu-link-2">MS Miyairi</a></li>
+            </ul>
+            </li>
+
+            <li class="nav-dropdown-2"> 
+            <a href="#" class="submenu-link" data-key="tankm">Tank Measurement</a>
+            <ul class="nav-submenu-2">
+                <li class="nav-dropdown-3"><a href="#" class="submenu-link-2">Vega Radarlevel G</a></li>
+                <li class="nav-dropdown-3"><a href="#" class="submenu-link-2">Thermogauge</a></li>
+                <li class="nav-dropdown-3"><a href="#" class="submenu-link-2">Pressure Gauge</a></li>
+            </ul>
+            </li>
+
+
+
+            <li><a href="#" class="submenu-link" data-key="vapor">Vaporisers</a></li>
+            <li><a href="#" class="submenu-link" data-key="meter">Meter</a></li>
+
+
+            <li class="nav-dropdown-2">
+            <a href="#" class="submenu-link" data-key="lah">Loading Arm Hoses</a>
+            <ul class="nav-submenu-2">
+                <li class="nav-dropdown-3"><a href="#" class="submenu-link-2">Safety RV</a></li>
+            </ul>
+            </li>
+
+        </ul>
+        </li>
+
+        <li class="nav-dropdown">
+            <a href="#" class="nav-link" data-key="projects">PROJECTS</a>
+            <ul class="nav-submenu" id="nav-productmenu">
+                <li><a href="#" class="submenu-link" data-key="customer_partner">Our Customers & Partners</a></li>
+                <li><a href="#" class="submenu-link" data-key="coreprojects">Core Projects</a></li>
+                <li><a href="#" class="submenu-link" data-key="services">Services</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#" class="nav-link" data-key="contact">CONTACT US</a></li>
+    </ul>
+
+
+
+    <!-- SEARCH BAR (L) -->
+    <div class="search-container">
+        <div class="search-wrapper">
+            <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+            <input type="text" class="search-input" placeholder="Search..." data-key="search_placeholder">
+        </div>
+    </div>
+
+    <!-- SEARCH BUTTON (M,S) -->
+    <button class="search-mobile-btn" id="searchMobileBtn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+
+    <!-- LANGUAGE SWITCH -->
+    <div class="lang-dropdown">
+    <button class="lang-switch-btn" id="langSwitchBtn">
+        <img src="https://flagcdn.com/24x18/vn.png" srcset="https://flagcdn.com/48x36/vn.png 2x" width="24" height="18" alt="Vietnamese">
+        <span class="lang-current">VI</span>
+        <span class="lang-arrow">▼</span>
+    </button>
+    <div class="lang-dropdown-menu" id="langDropdownMenu">
+        <a href="#" data-lang="vi" class="lang-option">
+            <img src="https://flagcdn.com/24x18/vn.png" srcset="https://flagcdn.com/48x36/vn.png 2x" width="24" height="18" alt="Vietnamese">
+            <span>Tiếng Việt</span>
+        </a>
+        <a href="#" data-lang="en" class="lang-option">
+            <img src="https://flagcdn.com/24x18/us.png" srcset="https://flagcdn.com/48x36/us.png 2x" width="24" height="18" alt="English">
+            <span>English</span>
+        </a>
+    </div>
+</div>
+
+    <!-- HAMBURGER (BUTTON) -->
+    <button class="hamburger" id="hamburgerBtn">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+    </button>
+    </div>
+</div>
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+
+    <!-- HAMBURGER (MENU) -->
+    <div class="side-menu" id="sideMenu">
+        <ul>
+            <li class="menu-item menu-item-first"><a href="index.html" class="menu-link" data-key="home">HOME</a></li>
+            
+            <li class="menu-item">
+                <div class="menu-link" data-dropdown="companySubmenu">
+                    <span data-key="company_information">COMPANY</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <ul class="submenu" id="companySubmenu">
+                    <li><a href="aboutus.html" class="submenu-link">About VINA LPG</a></li>
+                </ul>
+            </li>
+            
+            <li class="menu-item">
+                <div class="menu-link" data-dropdown="productmenu">
+                    <span data-key="products">PRODUCTS</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <ul class="submenu" id="productmenu">
+                    <li class="menu-item">
+                        <div class="menu-link submenu-trigger" data-dropdown="fillingsysMenu">
+                            <span data-key="fillingsys">Filling Systems</span>
+                        </div>
+                        <ul class="submenu nested-submenu" id="fillingsysMenu">
+                            <li><a href="#" class="submenu-link" data-key="fillingcaro">Filling Carousel</a></li>
+                            <li><a href="#" class="submenu-link">Standalone FM</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-link submenu-trigger" data-dropdown="compressorsMenu">
+                            <span data-key="compressors">Compressors</span>
+                        </div>
+                        <ul class="submenu nested-submenu" id="compressorsMenu">
+                            <li><a href="#" class="submenu-link">Corken</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-link submenu-trigger" data-dropdown="pumpsMenu">
+                            <span data-key="pumps">Pumps</span>
+                        </div>
+                        <ul class="submenu nested-submenu" id="pumpsMenu">
+                            <li><a href="#" class="submenu-link">Corken</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-link submenu-trigger" data-dropdown="valvesMenu">
+                            <span data-key="valves">Valves</span>
+                        </div>
+                        <ul class="submenu nested-submenu" id="valvesMenu">
+                            <li><a href="#" class="submenu-link">MS Miyairi</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-link submenu-trigger" data-dropdown="tankmMenu">
+                            <span data-key="tankm">Tank Measurement</span>
+                        </div>
+                        <ul class="submenu nested-submenu" id="tankmMenu">
+                            <li><a href="#" class="submenu-link">Vega Radarlevel G</a></li>
+                            <li><a href="#" class="submenu-link">Thermogauge</a></li>
+                            <li><a href="#" class="submenu-link">Pressure Gauge</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li><a href="#" class="menu-link" data-key="vapor">Vaporisers</a></li>
+                    <li><a href="#" class="menu-link" data-key="meter">Meter</a></li>
+
+
+                    <li class="menu-item">
+                        <div class="menu-link submenu-trigger" data-dropdown="lahMenu" data-key="lah">
+                            <span>Loading Arm Hoses</span>
+                        </div>
+                        <ul class="submenu nested-submenu" id="lahMenu">
+                            <li><a href="#" class="submenu-link">Safety RV</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <div class="menu-link" data-dropdown="projectmenu">
+                    <span data-key="projects">PROJECTS</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <ul class="submenu" id="projectmenu">
+                <li><a href="#" class="submenu-link" data-key="customer_partner">Our Customers & Partners</a></li>
+                <li><a href="#" class="submenu-link" data-key="coreprojects">Core Projects</a></li>
+                <li><a href="#" class="submenu-link" data-key="services">Services</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item"><a href="#" class="menu-link" data-key="contact">CONTACT US</a></li>
+        </ul>
+
+               <!-- ADD THIS LANGUAGE SWITCHER INSIDE SIDEBAR -->
+        <li class="menu-item lang-dropdown-mobile">
+    <div class="menu-link" id="mobileLangTrigger">
+        <span class="mobile-lang-current">
+            <img src="https://flagcdn.com/24x18/vn.png" width="24" height="18" alt="VN" id="mobileLangFlag">
+            <strong id="mobileLangText">VI</strong>
+        </span>
+        <span class="arrow" style="margin-left: auto;">▼</span>
+    </div>
+    <ul class="submenu" id="mobileLangSubmenu">
+    <li>
+        <a href="#" data-lang="vi" class="submenu-link mobile-lang-option">
+            <img src="https://flagcdn.com/24x18/vn.png" width="24" height="18" alt="VI" style="margin-right: 10px;">
+            <span>Tiếng Việt</span>
+        </a>
+    </li>
+    <li>
+        <a href="#" data-lang="en" class="submenu-link mobile-lang-option">
+            <img src="https://flagcdn.com/24x18/us.png" width="24" height="18" alt="EN" style="margin-right: 10px;">
+            <span>English</span>
+        </a>
+    </li>
+</ul>
+</li>
+
+        <div class="social-section">
+            <div class="social-title" data-key="follow_us">FOLLOW US</div>
+            <div class="social-links">
+                <!-- Facebook -->
+                <a href="#" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" width="28" height="28">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+                <!-- YouTube -->
+                <a href="#" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" width="28" height="28">
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/>
+                    </svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="#" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" width="28" height="28">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+ <!-- SEARCH MODAL OVERLAY -->
+<div class="search-overlay" id="searchOverlay">
+    <div class="search-modal">
+        <button class="search-close" id="searchCloseBtn">&times;</button>
+        <div class="search-modal-content">
+            <img src="images/logo/vinalpgheader.png" alt="Search" class="search-modal-icon-img">
+            <input data-key="search_placeholder_overlay" type="text" class="search-modal-input" id="searchModalInput" placeholder="Type anything here..." autocomplete="off">
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- HERO -->
+<section class="about-hero">
+    <div class="about-hero-content">
+        <h1>VINA LPG CO., LTD</h1>
+    </div>
+</section>
+
+<!-- SECTION: Introduction -->
+<div class="intro-section">
+<div class="intro-wrapper">
+
+    <div class="intro-top">        
+        <div class="intro-title">
+            <h2>About Us</h2>
+        </div>
+        <div class="intro-content">
+            <p>VINA LPG specializes in consulting, supplying, and supervising the installation of equipment and machinery for LPG (Liquefied Petroleum Gas) and NG (Natural Gas) industries for gas projects including: storage facilities, LPG tankers, LPG filling stations, NG substations for power plants and industrial facilities, etc...</p>
+            <p>In collaboration with experts from the USA, Italy, Germany, and Singapore, Vina LPG also provides consulting, design, installation, and commissioning services for projects:</p>
+            <ul>
+                <li>Installation of spherical tanks up to 2,500 tons</li>
+                <li>Construction of LPG filling plants with automatic and semi-automatic conveyor systems</li>
+                <li>Creation and installation of gas pressure reducing stations, gas treatment; metering, control, and natural gas distribution systems</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="intro-image">       
+        <img src="images/aboutus.png">
+    </div>
+
+</div>
+</div>
+
+    <!-- SECTION: Images -->
+    <div class="image-section">
+        <div class="three-columns">
+            <div class="image-card">
+                <img src="images/gallery1.JPG">
+            </div>
+            <div class="image-card">
+                <img src="images/gallery2.JPG">
+            </div>
+            <div class="image-card">
+                <img src="images/gallery_alt.JPG">
+            </div>
+            <div class="image-card">
+                <img src="images/gallery4.JPG">
+            </div>
+            <div class="image-card">
+                <img src="images/gallery5.jpg">
+            </div>
+            <div class="image-card">
+                <img src="images/gallery6.jpg">
+            </div>
+            <div class="image-card">
+                <img src="images/gallery7.jpg">
+            </div>
+            <div class="image-card">
+                <img src="images/gallery8.jpg">
+            </div>
+            <div class="image-card">
+                <img src="images/gallery9.jpg">
+            </div>
+<!-- More item here, or you can invest on a carousel of products -->
+
+        </div>
+    </div>
+
+
+    
+
+
+
+
+     <!-- FOOTER (COPY PASTE UNTIL THE END) -->
+    <div class="footer">
+        <div class="footer-main">
+            <div class="footer-col">
+                <h4>VINA LPG CO., LTD.</h4>
+                <p data-key="footer_text">Providing top-notch LPG and LNG solutions since 2000.</p>
+                <div class="footer-social">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 data-key="quick_links">QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#" data-key="aboutus">About Us</a></li>
+                    <li><a href="#" data-key="customer_partner">Our Customers & Partners</a></li>
+                    <li><a href="#" data-key="products_footer">Products</a></li>
+                    <li><a href="#" data-key="services">Services</a></li>
+                    <li><a href="#" data-key="tos">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-key="contact_footer">CONTACT</h4>
+                <ul>
+                    
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span data-key="address">Floor 2, 181 Cao Thang Street, District 10, Ho Chi Minh City</span>
+                    </li>
+                    
+                    <li><i class="fa-solid fa-phone"></i> +84 2862 747 789</li>
+                    <li><i class="fa-solid fa-envelope"></i> vinalpgas@com.vn</li>
+                    
+
+                    <li>
+                        <i class="fa-solid fa-clock"></i>
+                        <b data-key="business_days">T2-T6:</b>
+                        <span data-key="hours">9AM-5PM UTC+7</span>
+                    </li>
+
+
+                    <li>
+                        <i class="fa-solid fa-calendar-xmark"></i>
+                        <b data-key="holidays">T7, CN, Holidays:</b>
+                        <span data-key="hours_closed">Closed</span>
+                    </li>
+                
+                
+                </ul>
+            </div>
+        </div>
+        <div data-key="footer_copyright" class="footer-bottom">
+            <p>© 2026 VINA LPG COMPANY LIMITED. All rights reserved.</p>
+        </div>
+    </div>
+
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69d6384bdb6d6c1c35dcb160/1jlmcnq5g';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+    <script src="shared.js"></script>
+    <script src="aboutus.js"></script>
+</body>
+</html>
