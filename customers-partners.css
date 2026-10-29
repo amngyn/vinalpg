@@ -1,0 +1,208 @@
+/* Hero */
+.cuspar-hero {
+    margin-top: 0;
+    width: auto;
+    min-height: 650px;
+    background: url('images/content/company/hero/01.JPG') center 20%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: translateY(30px);
+    opacity: 0;
+    animation: heroPush 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    z-index: 0;
+}
+
+@keyframes heroPush {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.prod-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #8a95a3;
+    margin-bottom: 20px;
+}
+.prod-breadcrumb a {
+    color: inherit;
+    text-decoration: none;
+}
+.prod-breadcrumb a:hover {
+    color: #2277BB;
+}
+.prod-breadcrumb i { font-size: 9px; }
+.prod-breadcrumb .bc-active { color: #2277BB; font-weight: bold; }
+
+
+/* Customers & Partners */
+.customers-partners-main {
+    padding: 72px 24px 96px;
+    background: #ffffff;
+}
+
+.customers-partners-wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.customers-partners-intro {
+    max-width: 780px;
+    margin-bottom: 42px;
+}
+
+.customers-partners-intro h2 {
+    margin: 0;
+    color: #1A3A5C;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    line-height: 1.08;
+    max-width: 100%;
+    text-wrap: balance;
+    margin-bottom: 10px;
+}
+
+.customers-partners-intro p {
+    margin: 0;
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: 'Inter', sans-serif;
+}
+
+.logo-section {
+    margin-top: 54px;
+}
+
+.logo-section:first-of-type {
+    margin-top: 0;
+}
+
+.logo-section h2 {
+    margin: 0;
+    color: #1A3A5C;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    line-height: 1.08;
+    max-width: 100%;
+    text-wrap: balance;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.logo-grid--partners .logo-item:last-child {
+    grid-column: 2 / span 2;
+    width: calc((100% - 22px) / 2);
+    justify-self: center;
+}
+
+.logo-item {
+    min-height: 138px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 26px;
+    border: 1px solid rgba(16, 38, 61, 0.12);
+    background: #ffffff;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.logo-item:hover {
+    transform: translateY(-4px);
+    border-color: rgba(34, 119, 187, 0.35);
+}
+
+.logo-item img {
+    display: block;
+    width: 100%;
+    height: 82px;
+    object-fit: contain;
+    transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+.logo-item--large img {
+    height: 108px;
+}
+
+.logo-item:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.04);
+}
+
+@media (max-width: 1024px) {
+    .customers-partners-main {
+        padding: 56px 20px 76px;
+    }
+
+    .logo-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .logo-grid--partners .logo-item:last-child {
+        grid-column: auto;
+        width: auto;
+        justify-self: stretch;
+    }
+}
+
+@media (max-width: 720px) {
+    .customers-partners-main {
+        padding: 42px 16px 64px;
+    }
+
+    .customers-partners-intro {
+        margin-bottom: 34px;
+    }
+
+    .logo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .logo-grid--partners .logo-item:last-child {
+        grid-column: 1 / -1;
+        width: calc((100% - 16px) / 2);
+        justify-self: center;
+    }
+
+    .logo-item {
+        min-height: 118px;
+        padding: 20px;
+    }
+
+    .logo-item img {
+        height: 68px;
+    }
+
+    .logo-item--large img {
+        height: 88px;
+    }
+}
+
+@media (max-width: 440px) {
+    .logo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-grid--partners .logo-item:last-child {
+        grid-column: auto;
+        width: auto;
+        justify-self: stretch;
+    }
+}

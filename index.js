@@ -1,3 +1,28 @@
+
+const preloader = document.getElementById("preloader");
+
+if (preloader) {
+    document.body.classList.add("preloader-active");
+
+    window.addEventListener("load", () => {
+        const content = document.getElementById("main-content");
+
+        setTimeout(() => {
+            preloader.classList.add("is-complete");
+            document.body.classList.remove("preloader-active");
+
+            if (content) {
+                content.style.display = "block";
+            }
+
+            setTimeout(() => {
+                preloader.classList.add("hide");
+            }, 650);
+        }, 1200);
+    });
+}
+
+
 // Carousel
 const slides = document.querySelectorAll('.carousel-slide');
 const prevBtn = document.querySelector('.prev');
@@ -53,25 +78,15 @@ if (nextBtn) {
     });
 }
 function startInterval() {
-    if (!autoCarouselMedia.matches) return;
     clearInterval(interval);
-    interval = setInterval(nextSlide, 5000);
+    interval = setInterval(nextSlide, 4000);
 }
 
 function resetInterval() {
     clearInterval(interval);
-    if (autoCarouselMedia.matches) {
-        startInterval();
-    }
+    startInterval();
 }
 startInterval();
-
-autoCarouselMedia.addEventListener('change', () => {
-    clearInterval(interval);
-    if (autoCarouselMedia.matches) {
-        startInterval();
-    }
-});
 
 
 
@@ -168,3 +183,14 @@ function toggleCard(card) {
         }, 100);
     }
 }
+
+
+document.querySelectorAll('a[href="aboutus.html"]').forEach(link => {
+    link.addEventListener('click', () => {
+        sessionStorage.setItem('fromHome', '1');
+    });
+});
+
+
+
+
